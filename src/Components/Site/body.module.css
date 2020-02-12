@@ -1,0 +1,138 @@
+.bg{
+    background-image: url(./car.jpg);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    background-repeat: no-repeat!important;
+    background-size: contain;    
+}
+
+.err{
+    color: red;
+    font-style: italic;
+    margin-left: 37px;
+}
+
+.bgF{
+    background-color: #383838;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;    
+    margin: auto;
+    display:block;
+    margin-top: 60px;      
+}
+
+
+.bgF h2{
+    color: rgb(211, 211, 211);
+    margin: 0px;
+    padding: 10px;
+    padding-left: 90px;
+    background-color: #616161;  
+    font-size: 30px;  
+}
+
+.inp{
+  font-size: large;
+  font-style: italic;
+  color: slategray;
+  width: 200px;
+  padding: 10px;
+  margin-left: 37px;
+  display: inline-block;
+  border-radius: 3px;
+  border-color: #cff5ff;
+  background: #cff5ff;
+  margin-top: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.inputReg{
+    margin-left: 40px;
+    margin-top: 20px;
+    display:block;
+    text-align: center;
+    background-color: #05CAEE;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    opacity: 0.9;
+    font-size: large;
+    border-radius: 3px;
+    border: 2px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.bg h2{
+    
+    text-align: center;
+    padding-top: 100px;
+    font-size: 70px;
+    text-shadow:3px 1px white;
+}
+
+.logo{
+    background-image: url(./log.png);
+    height: 60px;
+    width: 60px;
+    background-size: 60px 60px;
+    margin-left: 100px;
+}
+
+.btn{
+  background-color: #05CAEE; /* Green */
+  border-radius: 5px;
+  border: 2px;
+  color: white;
+  padding: 6px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4;  
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);  
+  margin: auto;
+  display:block;
+  margin-top: -60px;
+ 
+}
+
+.nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 80px;
+	background-color:#383838;
+	
+
+}
+
+.Menu{
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	
+}
+.Menu li{
+	color: white;
+	text-transform: uppercase;
+	
+}
+
+
+.h{
+    color: #00D8FF;
+    margin-top: 10px;
+    margin-left: 70px;
+    font-size: 30px;
+
+}
+

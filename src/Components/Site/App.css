@@ -1,0 +1,28 @@
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 80px;
+	background-color:#383838;
+	
+
+}
+
+.Menu{
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	
+}
+.Menu li{
+	color: white;
+	text-transform: uppercase;
+	
+}
+
+
+.h{
+	color: yellow;
+}
