@@ -3,7 +3,7 @@ import RContext from './R_Context';
 
 
 
-export const MyContext = React.createContext(25)
+export const MyContext = React.createContext("Sign Up")
 export const MyContext2 = React.createContext(25)
 
 class App extends React.Component {

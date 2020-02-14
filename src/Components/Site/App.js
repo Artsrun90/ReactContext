@@ -6,7 +6,7 @@ import About_us from "./About_us";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Nav from "./Nav";
-import Registration from './Registration';
+import Registration from './newRegistrations';
 
 class App extends React.Component {
 //     constructor(props) {
