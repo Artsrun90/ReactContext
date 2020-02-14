@@ -1,6 +1,6 @@
 import React from 'react';
 import {MyContext} from './App';
-import Component3 from './Component3'
+
 
  
 class Compoonent2 extends React.Component {
@@ -16,7 +16,7 @@ class Compoonent2 extends React.Component {
                       <MyContext.Consumer>
                             {value => <h1>{value}</h1>}                          
                       </MyContext.Consumer>
-                      <Component3/>
+                      
                       
                   </div>
               )

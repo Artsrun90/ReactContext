@@ -1,6 +1,6 @@
 import React from 'react';
 import Compoonent2 from './Component2';
-
+import Component3 from './Component3'
 class R_Context extends React.Component {
           render(){
               return(
@@ -13,6 +13,7 @@ class R_Context extends React.Component {
                   }}>
                       <h1>React Context(</h1>
                       <Compoonent2 />
+                      <Component3 />
                   </div>
               )
           }
