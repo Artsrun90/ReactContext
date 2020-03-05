@@ -1,0 +1,43 @@
+.main{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1447&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+}
+
+.carBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 200px;
+    width: 30%;
+    border:2px solid #ccc;
+    color: ivory;
+    box-shadow: 1px 1px 2px 2px grey;
+}
+.carBox:hover{
+    box-shadow: 1px 1px 2px 2px grey,
+     1px 1px 2px 4px transparent,
+     1px 1px 2px 6px dimgrey;
+     transform: scale(1.02);
+     cursor: pointer;
+}
+hr{
+    width: 32%;
+    box-shadow: 1px 1px 2px 2px grey;
+    position: relative;
+    right: 35%;
+}
+button{
+   padding: 5px 15px;
+   border:none;
+   color:#f2f2f2;
+   font-weight: 600;
+   letter-spacing: 3px;
+   border-radius: 5px;
+   background-color: #8C96B0; 
+}

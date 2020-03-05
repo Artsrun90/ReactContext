@@ -1,6 +1,6 @@
 import React from 'react';
-import { MyContext } from '../Context/App';
-import s from './body.module.css'
+import { MyContext } from '../Site/App';
+import s from '../ReactContext/style.module.css'
 
 class Form extends React.Component { 
     
@@ -39,19 +39,18 @@ class Form extends React.Component {
     }
 
     handleSubmit=(e)=>{
+        debugger
         e.preventDefault()
     }
 
     
     render(){
         return(
-            <div>
+            <div>                       
+            <form className={s.myform} onSubmit={this.handleSubmit.bind(this)} autoComplete="off">
             <MyContext.Consumer>
-                {value => <h2>{value}</h2>}
+                {value => <h2  style={{ marginTop: "-130px", fontSize: "40px", color: "#C11C14" }}>{value}</h2>}
             </MyContext.Consumer>
-                        
-            <form className={s.myForm} onSubmit={this.handleSubmit.bind(this)} autoComplete="off">
-                
                <div>
                    <label htmlFor="name">First name</label>
                    <input 
@@ -94,6 +93,7 @@ class Form extends React.Component {
                 </div>
                 <input 
                 type="submit"
+                value="Sign Up"
                 />
                                    
             </form>

@@ -8,6 +8,8 @@ import Contact from "./Contact";
 import Nav from "./Nav";
 import Registration from './newRegistrations';
 
+export const MyContext = React.createContext("Sign Up")
+
 class App extends React.Component {
 //     constructor(props) {
 //         super(props);
