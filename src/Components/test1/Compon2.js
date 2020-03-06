@@ -3,12 +3,12 @@ import axios from 'axios';
 function Compon2() {
   const [user, setUser] = useState([]);
   const [usersort, setUsersort] = useState([]);
-  const [inputtext, setInputtext] = useState("");
+  const [inputtext, setInputtext] = useState();
 
   useEffect(() => {
     axios.get('https://jsonplaceholder.typicode.com/users')
     .then(res => {
-      console.log(res)
+      // console.log(res)
       setUser(res.data)
     })
   }, []);
@@ -18,6 +18,7 @@ function Compon2() {
       if (item.username === inputtext) {        
         setUsersort([...usersort, item]) // usersorti-ին push է անում նոր item արժեքը
       }
+      console.log("usersort: " + usersort.length)
       return usersort;
     })
   }
@@ -34,7 +35,7 @@ function Compon2() {
       onBlur={handleChange}
        />
       <button onClick={sortUsers}>Sort</button>
-      {console.log("usersort: " + usersort)}      
+      {/* {console.log("usersort: " + usersort)}       */}
       <ul>
       {usersort.map(item => (
         <li key={item.id}>
