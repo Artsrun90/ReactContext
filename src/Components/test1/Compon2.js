@@ -1,28 +1,61 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 function Compon2() {
-  const [db, setData] = useState({ data: [] });
-  debugger
-  useEffect( () => {
-    const fetchData = async () => {
-    const res = await axios(
-      'https://jsonplaceholder.typicode.com/users',
-    );
-    setData(res);
-    console.log(res)
-  };
-  fetchData();
+  const [user, setUser] = useState([]);
+  const [usersort, setUsersort] = useState([]);
+  const [inputtext, setInputtext] = useState("");
+
+  useEffect(() => {
+    axios.get('https://jsonplaceholder.typicode.com/users')
+    .then(res => {
+      console.log(res)
+      setUser(res.data)
+    })
   }, []);
 
+  function sortUsers() {
+    user.map(item => {
+      if (item.username === inputtext) {        
+        setUsersort([...usersort, item]) // usersorti-ին push է անում նոր item արժեքը
+      }
+      return usersort;
+    })
+  }
+
+  function handleChange(event){
+    let value = event.target.value;
+    setInputtext(value);
+  }
+
   return (
-      
-    <ul>
-      {db.data.map(item => (
+    <div>
+      <input 
+      type="text"
+      onBlur={handleChange}
+       />
+      <button onClick={sortUsers}>Sort</button>
+      {console.log("usersort: " + usersort)}      
+      <ul>
+      {usersort.map(item => (
         <li key={item.id}>
-          <a>{item.name}</a>
+          <p>{item.username}</p>
         </li>
       ))}
     </ul>
+    </div>
   );
 }
 export default Compon2;
+
+
+
+  // useEffect( () => {
+  //   const fetchData = async () => {
+  //   const res = await axios(
+  //     'http://localhost:3001/customers',
+  //   );
+  //   setData(res);
+  //   console.log(res)
+  // };
+  // fetchData();
+  // }, []);
